@@ -86,9 +86,9 @@ export default function useVehicleRadar({ enabled, routeId, speak }) {
     let photo;
     try {
       photo = await cameraRef.current.takePictureAsync({
-        quality: 0.25,
+        quality: 0.6,
         base64: true,
-        skipProcessing: true,
+        skipProcessing: false,
         shutterSound: false
       });
 
